@@ -59,4 +59,6 @@ public class Vaisseau {
 	    this.x = x;
 	    this.y = y;
     }
+	
+	
 }
