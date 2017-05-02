@@ -67,14 +67,14 @@ public class SpaceInvadersTest {
 		
 		
 		try {
-			spaceInvaders.positionnerUnNouveauVaisseau(14,10);
+			spaceInvaders.positionnerUnNouveauVaisseau(1,1,14,10);
 			fail("Position trop en bas : devrait déclencher une exception HorsEspaceJeuException");
 		} catch (final HorsEspaceJeuException e) {
 		}
 		
 		
 		try {
-			spaceInvaders.positionnerUnNouveauVaisseau(14,-1);
+			spaceInvaders.positionnerUnNouveauVaisseau(1,1,14,-1);
 			fail("Position trop à haut : devrait déclencher une exception HorsEspaceJeuException");
 		} catch (final HorsEspaceJeuException e) {
 		}
@@ -83,7 +83,7 @@ public class SpaceInvadersTest {
    @Test
 	public void test_VaisseauAvance_DeplacerVaisseauVersLaDroite() {
 		
-		spaceInvaders.positionnerUnNouveauVaisseau(7,9);
+		spaceInvaders.positionnerUnNouveauVaisseau(1,1,7,9);
 
 		spaceInvaders.deplacerVaisseauVersLaDroite();
 		
@@ -103,7 +103,7 @@ public class SpaceInvadersTest {
    @Test
 	public void test_VaisseauImmobile_DeplacerVaisseauVersLaDroite() {
 		
-		spaceInvaders.positionnerUnNouveauVaisseau(14,9);
+		spaceInvaders.positionnerUnNouveauVaisseau(1,1,14,9);
 
 		spaceInvaders.deplacerVaisseauVersLaDroite();
 		
@@ -122,7 +122,7 @@ public class SpaceInvadersTest {
    @Test
 	public void test_VaisseauAvance_DeplacerVaisseauVersLaGauche() {
 		
-		spaceInvaders.positionnerUnNouveauVaisseau(7,9);
+		spaceInvaders.positionnerUnNouveauVaisseau(1,1,7,9);
 
 		spaceInvaders.deplacerVaisseauVersLaGauche();
 		
@@ -142,7 +142,7 @@ public class SpaceInvadersTest {
    @Test
 	public void test_VaisseauImmobile_DeplacerVaisseauVersLaGauche() {
 		
-		spaceInvaders.positionnerUnNouveauVaisseau(0,9);
+		spaceInvaders.positionnerUnNouveauVaisseau(1,1,0,9);
 
 		spaceInvaders.deplacerVaisseauVersLaGauche();
 		
